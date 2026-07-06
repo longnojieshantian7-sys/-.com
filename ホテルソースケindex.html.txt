@@ -73,7 +73,7 @@ footer{
 <section>
 
 <div class="card">
-<h2>ようこそ Hotel Mirageへ</h2>
+<h2>ようこそホテルソースケ予約サイト.comへジョークだよ♡</h2>
 <p>
 
 心も体も癒される、最高のひとときを。1泊2日晩御飯・朝食付き（税込）514円。驚きの低価格！♡爽介店長のマッサージ付き♥有料駐車場所在地京都市伏見区深草爽介町55JR東海小和田駅直結
@@ -111,7 +111,43 @@ footer{
 
 <script>
 function reserve(){
-    alert("😂 このホテルは架空のジョークサイトです！\n実際には予約できません。");
+
+    let day = prompt("宿泊日を入力してください\n例：2026/8/15");
+    if(day == null) return;
+
+    let people = prompt("宿泊人数を入力してください");
+    if(people == null) return;
+
+    alert("空室検索中...");
+
+    setTimeout(function(){
+
+        alert("✅ 空室が見つかりました！");
+
+        let ok = confirm(
+            "宿泊日：" + day +
+            "\n人数：" + people + "名" +
+            "\n料金：514円（税込）\n\n予約を確定しますか？"
+        );
+
+        if(!ok){
+            alert("予約をキャンセルしました。");
+            return;
+        }
+
+        document.body.innerHTML =
+        "<h1 style='text-align:center;margin-top:180px;'>予約確定中...</h1>";
+
+        setTimeout(function(){
+
+            document.body.innerHTML =
+            "<h1 style='text-align:center;margin-top:150px;'>😂 ネタでした 😂</h1>" +
+            "<p style='text-align:center;font-size:22px;'>ホテルソースケは架空のジョークサイトです。<br>予約はできません。</p>";
+
+        },3000);
+
+    },1500);
+
 }
 </script>
 
