@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Mirage - ホテルソースケ</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600") center/cover;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+header h1{
+    font-size:55px;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hotel Mirage</h1>
+</header>
+
+<section>
+
+<div class="card">
+<h2>ようこそ Hotel Mirageへ</h2>
+<p>
+
+心も体も癒される、最高のひとときを。1泊2日晩御飯・朝食付き（税込）514円。驚きの低価格！♡爽介店長のマッサージ付き♥有料駐車場所在地京都市伏見区深草爽介町55JR東海小和田駅直結
+
+</p>
+</div>
+
+<div class="card">
+<h2>客室</h2>
+<ul>
+<li>ガリガリスイート　514円/泊</li>
+<li>🐖豚キムチ付きルーム514円</li>
+<li>西澤コンシェルジュ付き和室514円（※こちらは比叡山となります）</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>設備</h2>
+<ul>
+<li>有線LANのみ</li>
+<li>カーナビのテレビ</li>
+<li>🚀 ユニットバス</li>
+</ul>
+</div>
+
+<div class="card" style="text-align:center;">
+<button onclick="reserve()">予約する</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 Hotel Mirage
+</footer>
+
+<script>
+function reserve(){
+    alert("😂 このホテルは架空のジョークサイトです！\n実際には予約できません。");
+}
+</script>
+
+</body>
+</html>
